@@ -121,5 +121,10 @@ namespace Arquitectura_Login
         {
 
         }
+
+        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
