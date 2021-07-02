@@ -16,7 +16,7 @@ namespace Arquitectura_Login
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmLogueo());
         }
     }
 }

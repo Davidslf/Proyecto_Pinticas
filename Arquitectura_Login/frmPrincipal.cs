@@ -25,7 +25,7 @@ namespace Arquitectura_Login
         {
             //admin
 
-            if (frmLogin.area.Trim() == "A001")
+            if (frmLogueo.area.Trim() == "A001")
 
             {
 
@@ -41,7 +41,7 @@ namespace Arquitectura_Login
             }
 
             //Ventas
-            else if (frmLogin.area == "A002")
+            else if (frmLogueo.area == "A002")
                         {
                 btnusuarios.Enabled = true;
                 btnciudades.Enabled = true;
@@ -50,7 +50,7 @@ namespace Arquitectura_Login
                 lblcargo.Text = "Ventas";
             }
             //Compras
-            else if (frmLogin.area == "A003")
+            else if (frmLogueo.area == "A003")
             {
                 btnusuarios.Enabled = true;
                 btnciudades.Enabled = true;
@@ -61,7 +61,7 @@ namespace Arquitectura_Login
                 lblcargo.Text = "Compras";
             }
 
-            lblnombre.Text = frmLogin.usuario_nombre;
+            lblnombre.Text = frmLogueo.usuario_nombre;
             timer1.Start();
 
         }
@@ -69,7 +69,7 @@ namespace Arquitectura_Login
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblfecha.Text = DateTime.Now.ToString("dd-MM-yyyy");
-            lblhora.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            
         }
 
         private void buttoncerrar_Click(object sender, EventArgs e)
@@ -80,6 +80,36 @@ namespace Arquitectura_Login
         private void buttonmini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /*private void button1_Click(object sender, EventArgs e)
+        {
+            Mantenimiento VentanaClientes = new Mantenimiento();
+            AddOwnedForm(VentanaClientes);
+            VentanaClientes.Show();
+        }*/
+
+        private void AbrirFormEnPanel(object formhija)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Mantenimiento());
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Arquitectura_Login
 {
-    partial class frmLogin
+    partial class frmLogueo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Arquitectura_Login
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogueo));
             this.buttonmini = new System.Windows.Forms.PictureBox();
             this.buttoncerrar = new System.Windows.Forms.PictureBox();
             this.linkcontra = new System.Windows.Forms.LinkLabel();
@@ -52,34 +52,34 @@ namespace Arquitectura_Login
             // buttonmini
             // 
             this.buttonmini.Image = ((System.Drawing.Image)(resources.GetObject("buttonmini.Image")));
-            this.buttonmini.Location = new System.Drawing.Point(730, 9);
+            this.buttonmini.Location = new System.Drawing.Point(737, 9);
             this.buttonmini.Name = "buttonmini";
             this.buttonmini.Size = new System.Drawing.Size(25, 23);
             this.buttonmini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.buttonmini.TabIndex = 19;
+            this.buttonmini.TabIndex = 29;
             this.buttonmini.TabStop = false;
-            this.buttonmini.Click += new System.EventHandler(this.buttonmini_Click_1);
+            this.buttonmini.Click += new System.EventHandler(this.buttonmini_Click);
             // 
             // buttoncerrar
             // 
             this.buttoncerrar.Image = ((System.Drawing.Image)(resources.GetObject("buttoncerrar.Image")));
-            this.buttoncerrar.Location = new System.Drawing.Point(761, 9);
+            this.buttoncerrar.Location = new System.Drawing.Point(768, 9);
             this.buttoncerrar.Name = "buttoncerrar";
             this.buttoncerrar.Size = new System.Drawing.Size(25, 23);
             this.buttoncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.buttoncerrar.TabIndex = 18;
+            this.buttoncerrar.TabIndex = 28;
             this.buttoncerrar.TabStop = false;
-            this.buttoncerrar.Click += new System.EventHandler(this.buttoncerrar_Click_1);
+            this.buttoncerrar.Click += new System.EventHandler(this.buttoncerrar_Click);
             // 
             // linkcontra
             // 
             this.linkcontra.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.linkcontra.AutoSize = true;
             this.linkcontra.LinkColor = System.Drawing.Color.DimGray;
-            this.linkcontra.Location = new System.Drawing.Point(484, 297);
+            this.linkcontra.Location = new System.Drawing.Point(491, 297);
             this.linkcontra.Name = "linkcontra";
             this.linkcontra.Size = new System.Drawing.Size(136, 13);
-            this.linkcontra.TabIndex = 10;
+            this.linkcontra.TabIndex = 20;
             this.linkcontra.TabStop = true;
             this.linkcontra.Text = "¿Olvidastre su contraseña?";
             // 
@@ -92,10 +92,10 @@ namespace Arquitectura_Login
             this.buttonlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonlogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonlogin.ForeColor = System.Drawing.Color.LightGray;
-            this.buttonlogin.Location = new System.Drawing.Point(389, 246);
+            this.buttonlogin.Location = new System.Drawing.Point(396, 246);
             this.buttonlogin.Name = "buttonlogin";
             this.buttonlogin.Size = new System.Drawing.Size(309, 31);
-            this.buttonlogin.TabIndex = 15;
+            this.buttonlogin.TabIndex = 25;
             this.buttonlogin.Text = "ACCEDER";
             this.buttonlogin.UseVisualStyleBackColor = false;
             this.buttonlogin.Click += new System.EventHandler(this.buttonlogin_Click);
@@ -105,10 +105,10 @@ namespace Arquitectura_Login
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(520, 6);
+            this.label1.Location = new System.Drawing.Point(527, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 33);
-            this.label1.TabIndex = 17;
+            this.label1.TabIndex = 27;
             this.label1.Text = "LOGIN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -118,10 +118,10 @@ namespace Arquitectura_Login
             this.txtcontraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcontraseña.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcontraseña.ForeColor = System.Drawing.Color.DimGray;
-            this.txtcontraseña.Location = new System.Drawing.Point(292, 199);
+            this.txtcontraseña.Location = new System.Drawing.Point(299, 199);
             this.txtcontraseña.Name = "txtcontraseña";
             this.txtcontraseña.Size = new System.Drawing.Size(475, 20);
-            this.txtcontraseña.TabIndex = 14;
+            this.txtcontraseña.TabIndex = 24;
             this.txtcontraseña.Text = "CONTRASEÑA";
             this.txtcontraseña.Enter += new System.EventHandler(this.txtcontraseña_Enter);
             this.txtcontraseña.Leave += new System.EventHandler(this.txtcontraseña_Leave);
@@ -130,10 +130,10 @@ namespace Arquitectura_Login
             // 
             this.panel3.BackColor = System.Drawing.Color.DimGray;
             this.panel3.Enabled = false;
-            this.panel3.Location = new System.Drawing.Point(291, 220);
+            this.panel3.Location = new System.Drawing.Point(298, 220);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(475, 1);
-            this.panel3.TabIndex = 16;
+            this.panel3.TabIndex = 26;
             // 
             // txtusuario
             // 
@@ -141,10 +141,10 @@ namespace Arquitectura_Login
             this.txtusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtusuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.ForeColor = System.Drawing.Color.DimGray;
-            this.txtusuario.Location = new System.Drawing.Point(293, 107);
+            this.txtusuario.Location = new System.Drawing.Point(300, 107);
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(475, 20);
-            this.txtusuario.TabIndex = 12;
+            this.txtusuario.TabIndex = 22;
             this.txtusuario.Text = "USUARIO";
             this.txtusuario.Enter += new System.EventHandler(this.txtusuario_Enter);
             this.txtusuario.Leave += new System.EventHandler(this.txtusuario_Leave);
@@ -153,10 +153,10 @@ namespace Arquitectura_Login
             // 
             this.panel2.BackColor = System.Drawing.Color.DimGray;
             this.panel2.Enabled = false;
-            this.panel2.Location = new System.Drawing.Point(291, 129);
+            this.panel2.Location = new System.Drawing.Point(298, 129);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(475, 1);
-            this.panel2.TabIndex = 13;
+            this.panel2.TabIndex = 23;
             // 
             // panel1
             // 
@@ -168,7 +168,7 @@ namespace Arquitectura_Login
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 450);
-            this.panel1.TabIndex = 11;
+            this.panel1.TabIndex = 21;
             // 
             // label3
             // 
@@ -200,7 +200,7 @@ namespace Arquitectura_Login
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
-            // frmLogin
+            // frmLogueo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -217,10 +217,9 @@ namespace Arquitectura_Login
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmLogin";
-            this.Opacity = 0.9D;
+            this.Name = "frmLogueo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLogin";
+            this.Text = "frmLogueo";
             ((System.ComponentModel.ISupportInitialize)(this.buttonmini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttoncerrar)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -243,8 +242,8 @@ namespace Arquitectura_Login
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label3;
     }
 }

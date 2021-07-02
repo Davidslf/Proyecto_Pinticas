@@ -23,7 +23,6 @@ namespace Capa_Nrgocio
 
 
     }
-
     public class ClassNegocio
     {
         ClassDatos objd = new  ClassDatos();

@@ -10,6 +10,7 @@ using Capa_Entidad;
 
 namespace Capa_Datos
 {
+
     public class D_Users
     {
 
@@ -30,10 +31,11 @@ namespace Capa_Datos
         }
     }
 
+
     public class ClassDatos
     {
 
-        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ConnectionString);
 
 
 
