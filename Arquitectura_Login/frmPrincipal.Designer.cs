@@ -31,18 +31,11 @@ namespace Arquitectura_Login
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblnombre = new System.Windows.Forms.Label();
-            this.lblfecha = new System.Windows.Forms.Label();
-            this.lblcargo = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.buttonmini = new System.Windows.Forms.PictureBox();
             this.buttoncerrar = new System.Windows.Forms.PictureBox();
-            this.lbbienvenido = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.lblfecha = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.btnClientes = new System.Windows.Forms.Button();
@@ -56,8 +49,6 @@ namespace Arquitectura_Login
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.btnusuarios = new System.Windows.Forms.Button();
-            this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonmini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttoncerrar)).BeginInit();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -69,72 +60,6 @@ namespace Arquitectura_Login
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(17, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(386, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Fecha:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(160, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Cargo:";
-            // 
-            // lblnombre
-            // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombre.ForeColor = System.Drawing.Color.White;
-            this.lblnombre.Location = new System.Drawing.Point(79, 9);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(61, 17);
-            this.lblnombre.TabIndex = 4;
-            this.lblnombre.Text = "Nombre";
-            // 
-            // lblfecha
-            // 
-            this.lblfecha.AutoSize = true;
-            this.lblfecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfecha.ForeColor = System.Drawing.Color.White;
-            this.lblfecha.Location = new System.Drawing.Point(450, 6);
-            this.lblfecha.Name = "lblfecha";
-            this.lblfecha.Size = new System.Drawing.Size(28, 17);
-            this.lblfecha.TabIndex = 5;
-            this.lblfecha.Text = ".....";
-            // 
-            // lblcargo
-            // 
-            this.lblcargo.AutoSize = true;
-            this.lblcargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcargo.ForeColor = System.Drawing.Color.White;
-            this.lblcargo.Location = new System.Drawing.Point(225, 8);
-            this.lblcargo.Name = "lblcargo";
-            this.lblcargo.Size = new System.Drawing.Size(28, 17);
-            this.lblcargo.TabIndex = 7;
-            this.lblcargo.Text = ".....";
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -142,59 +67,29 @@ namespace Arquitectura_Login
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.panelContenedor.Controls.Add(this.buttonmini);
-            this.panelContenedor.Controls.Add(this.buttoncerrar);
-            this.panelContenedor.Controls.Add(this.lbbienvenido);
-            this.panelContenedor.Controls.Add(this.lblcargo);
-            this.panelContenedor.Controls.Add(this.lblfecha);
-            this.panelContenedor.Controls.Add(this.label2);
-            this.panelContenedor.Controls.Add(this.label4);
-            this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.lblnombre);
             this.panelContenedor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelContenedor.Location = new System.Drawing.Point(236, 0);
+            this.panelContenedor.Location = new System.Drawing.Point(245, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(790, 680);
+            this.panelContenedor.Size = new System.Drawing.Size(841, 680);
             this.panelContenedor.TabIndex = 17;
-            // 
-            // buttonmini
-            // 
-            this.buttonmini.Image = ((System.Drawing.Image)(resources.GetObject("buttonmini.Image")));
-            this.buttonmini.Location = new System.Drawing.Point(742, 12);
-            this.buttonmini.Name = "buttonmini";
-            this.buttonmini.Size = new System.Drawing.Size(25, 23);
-            this.buttonmini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.buttonmini.TabIndex = 21;
-            this.buttonmini.TabStop = false;
-            this.buttonmini.Click += new System.EventHandler(this.buttonmini_Click);
             // 
             // buttoncerrar
             // 
             this.buttoncerrar.Image = ((System.Drawing.Image)(resources.GetObject("buttoncerrar.Image")));
-            this.buttoncerrar.Location = new System.Drawing.Point(773, 12);
+            this.buttoncerrar.Location = new System.Drawing.Point(0, 3);
             this.buttoncerrar.Name = "buttoncerrar";
-            this.buttoncerrar.Size = new System.Drawing.Size(25, 23);
+            this.buttoncerrar.Size = new System.Drawing.Size(38, 42);
             this.buttoncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttoncerrar.TabIndex = 20;
             this.buttoncerrar.TabStop = false;
             this.buttoncerrar.Click += new System.EventHandler(this.buttoncerrar_Click);
             // 
-            // lbbienvenido
-            // 
-            this.lbbienvenido.AutoSize = true;
-            this.lbbienvenido.BackColor = System.Drawing.Color.Transparent;
-            this.lbbienvenido.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbbienvenido.ForeColor = System.Drawing.Color.DimGray;
-            this.lbbienvenido.Location = new System.Drawing.Point(0, 40);
-            this.lbbienvenido.Name = "lbbienvenido";
-            this.lbbienvenido.Size = new System.Drawing.Size(510, 41);
-            this.lbbienvenido.TabIndex = 2;
-            this.lbbienvenido.Text = "Bienvenido al menu principal";
-            // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.panelMenu.Controls.Add(this.lblfecha);
             this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.Controls.Add(this.buttoncerrar);
             this.panelMenu.Controls.Add(this.pictureBox7);
             this.panelMenu.Controls.Add(this.btnClientes);
             this.panelMenu.Controls.Add(this.pictureBox1);
@@ -209,8 +104,21 @@ namespace Arquitectura_Login
             this.panelMenu.Controls.Add(this.btnusuarios);
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(239, 534);
+            this.panelMenu.Size = new System.Drawing.Size(239, 700);
             this.panelMenu.TabIndex = 16;
+            // 
+            // lblfecha
+            // 
+            this.lblfecha.AutoSize = true;
+            this.lblfecha.BackColor = System.Drawing.Color.Transparent;
+            this.lblfecha.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfecha.ForeColor = System.Drawing.Color.White;
+            this.lblfecha.Location = new System.Drawing.Point(55, 653);
+            this.lblfecha.Name = "lblfecha";
+            this.lblfecha.Size = new System.Drawing.Size(53, 38);
+            this.lblfecha.TabIndex = 21;
+            this.lblfecha.Text = "....";
+            this.lblfecha.Click += new System.EventHandler(this.lblfecha_Click);
             // 
             // button2
             // 
@@ -219,7 +127,7 @@ namespace Arquitectura_Login
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(106, 276);
+            this.button2.Location = new System.Drawing.Point(119, 587);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 17;
@@ -229,7 +137,7 @@ namespace Arquitectura_Login
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(3, 255);
+            this.pictureBox7.Location = new System.Drawing.Point(19, 326);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(86, 65);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -243,7 +151,7 @@ namespace Arquitectura_Login
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClientes.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnClientes.Location = new System.Drawing.Point(106, 411);
+            this.btnClientes.Location = new System.Drawing.Point(119, 509);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(100, 26);
             this.btnClientes.TabIndex = 15;
@@ -254,7 +162,7 @@ namespace Arquitectura_Login
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 397);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 494);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(83, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,9 +172,9 @@ namespace Arquitectura_Login
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(239, 106);
+            this.pictureBox2.Size = new System.Drawing.Size(233, 127);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -278,7 +186,7 @@ namespace Arquitectura_Login
             this.btncargo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncargo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btncargo.Location = new System.Drawing.Point(106, 347);
+            this.btncargo.Location = new System.Drawing.Point(119, 434);
             this.btncargo.Name = "btncargo";
             this.btncargo.Size = new System.Drawing.Size(100, 29);
             this.btncargo.TabIndex = 13;
@@ -288,7 +196,7 @@ namespace Arquitectura_Login
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 121);
+            this.pictureBox3.Location = new System.Drawing.Point(19, 161);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(86, 55);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -298,7 +206,7 @@ namespace Arquitectura_Login
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(6, 326);
+            this.pictureBox6.Location = new System.Drawing.Point(22, 411);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(83, 65);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -313,7 +221,7 @@ namespace Arquitectura_Login
             this.btnciudades.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnciudades.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnciudades.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnciudades.Location = new System.Drawing.Point(106, 478);
+            this.btnciudades.Location = new System.Drawing.Point(119, 348);
             this.btnciudades.Name = "btnciudades";
             this.btnciudades.Size = new System.Drawing.Size(100, 28);
             this.btnciudades.TabIndex = 6;
@@ -327,17 +235,18 @@ namespace Arquitectura_Login
             this.btnempleados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnempleados.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnempleados.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnempleados.Location = new System.Drawing.Point(106, 207);
+            this.btnempleados.Location = new System.Drawing.Point(119, 258);
             this.btnempleados.Name = "btnempleados";
             this.btnempleados.Size = new System.Drawing.Size(100, 29);
             this.btnempleados.TabIndex = 7;
             this.btnempleados.Text = "Empleados";
             this.btnempleados.UseVisualStyleBackColor = false;
+            this.btnempleados.Click += new System.EventHandler(this.btnempleados_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 182);
+            this.pictureBox4.Location = new System.Drawing.Point(22, 239);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(86, 67);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,7 +256,7 @@ namespace Arquitectura_Login
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(6, 461);
+            this.pictureBox5.Location = new System.Drawing.Point(22, 566);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(86, 62);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -361,7 +270,7 @@ namespace Arquitectura_Login
             this.btnusuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnusuarios.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnusuarios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnusuarios.Location = new System.Drawing.Point(106, 139);
+            this.btnusuarios.Location = new System.Drawing.Point(119, 174);
             this.btnusuarios.Name = "btnusuarios";
             this.btnusuarios.Size = new System.Drawing.Size(100, 26);
             this.btnusuarios.TabIndex = 4;
@@ -373,7 +282,7 @@ namespace Arquitectura_Login
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
-            this.ClientSize = new System.Drawing.Size(1052, 535);
+            this.ClientSize = new System.Drawing.Size(1097, 700);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -382,11 +291,9 @@ namespace Arquitectura_Login
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
-            this.panelContenedor.ResumeLayout(false);
-            this.panelContenedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonmini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttoncerrar)).EndInit();
             this.panelMenu.ResumeLayout(false);
+            this.panelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -399,16 +306,8 @@ namespace Arquitectura_Login
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblnombre;
-        private System.Windows.Forms.Label lblfecha;
-        private System.Windows.Forms.Label lblcargo;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.Label lbbienvenido;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btncargo;
@@ -419,11 +318,11 @@ namespace Arquitectura_Login
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button btnusuarios;
-        private System.Windows.Forms.PictureBox buttonmini;
         private System.Windows.Forms.PictureBox buttoncerrar;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblfecha;
     }
 }

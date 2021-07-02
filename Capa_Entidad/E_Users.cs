@@ -43,4 +43,35 @@ namespace Capa_Entidad
 
     }
 
+    public class ClassEntidad_Empleado
+    {
+
+
+        public int Id_empleado { get; set; }
+
+
+
+        public String Nombre_empleado { get; set; }
+
+
+
+        public String Apellido_empleado { get; set; }
+
+
+
+        public int Id_cargo_empleado { get; set; }
+
+
+
+        public String Id_ciudad_empleado { get; set; }
+
+
+        public String Direccion_empleado { get; set; }
+
+
+        public int Telefono_empleado { get; set; }
+
+
+    }
+
 }

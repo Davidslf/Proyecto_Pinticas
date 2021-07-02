@@ -35,7 +35,7 @@ namespace Arquitectura_Login
                 btncargo.Enabled = true;
 
 
-                lblcargo.Text = "Administrador";
+                /*lblcargo.Text = "Administrador";*/
 
 
             }
@@ -47,7 +47,7 @@ namespace Arquitectura_Login
                 btnciudades.Enabled = true;
                 btnempleados.Enabled = true;
                 btncargo.Enabled = true;
-                lblcargo.Text = "Ventas";
+                /*lblcargo.Text = "Ventas";*/
             }
             //Compras
             else if (frmLogueo.area == "A003")
@@ -58,10 +58,10 @@ namespace Arquitectura_Login
                 btncargo.Enabled = true;
 
 
-                lblcargo.Text = "Compras";
+                /*lblcargo.Text = "Compras";*/
             }
 
-            lblnombre.Text = frmLogueo.usuario_nombre;
+            /*lblnombre.Text = frmLogueo.usuario_nombre;*/
             timer1.Start();
 
         }
@@ -110,6 +110,16 @@ namespace Arquitectura_Login
         private void btnClientes_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Mantenimiento());
+        }
+
+        private void btnempleados_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new frmEmpleados());
+        }
+
+        private void lblfecha_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

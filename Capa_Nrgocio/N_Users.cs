@@ -50,5 +50,36 @@ namespace Capa_Nrgocio
 
             return objd.D_mantenimiento_clientes(obje);
         }
+
+    }
+
+    public class ClassEmpleados
+    {
+        ClassDatos_Empleados objd = new ClassDatos_Empleados();
+
+
+
+        public DataTable N_listar_Empleados()
+        {
+
+            return objd.D_Listar_Empleado();
+
+        }
+
+        public DataTable N_buscar_Empleados(ClassEntidad_Empleado obje)
+
+        {
+
+            return objd.D_buscar_Empleado(obje);
+
+        }
+
+        /*public string N_mantenimientoEmpleados(ClassEntidad obje)
+
+        {
+
+            return objd.D_mantenimiento_clientes(obje);
+        }*/
+
     }
 }

@@ -107,6 +107,81 @@ namespace Capa_Datos
         }
     }
 
+    public class ClassDatos_Empleados
+    {
+
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["cnn"].ConnectionString);
+
+
+
+        public DataTable D_Listar_Empleado()
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_empleado", cn);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            return dt;
+
+        }
+
+
+        /*public string D_mantenimiento_clientes(ClassEntidad obje)
+
+        {
+
+            string accion = "";
+
+            SqlCommand cmd = new SqlCommand("sp_mantenimiento clientes", cn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@identificacion", obje.identificacion);
+
+            cmd.Parameters.AddWithValue("@nombre", obje.nombre);
+
+            cmd.Parameters.AddWithValue("@edad", obje.edad);
+
+            cmd.Parameters.AddWithValue("@telefono", obje.telefono); cmd.Parameters.Add("@accion", SqlDbType.VarChar, 50).Value = obje.accion;
+
+            cmd.Parameters["@accion"].Direction = ParameterDirection.InputOutput;
+
+            if (cn.State == ConnectionState.Open) cn.Close();
+
+            cn.Open();
+
+            cmd.ExecuteNonQuery();
+
+            accion = cmd.Parameters["@accion"].Value.ToString();
+
+            cn.Close(); return accion;
+
+
+        }*/
+
+        public DataTable D_buscar_Empleado(ClassEntidad_Empleado obje)
+        {
+
+            SqlCommand cmd = new SqlCommand("sp_buscar_empleado", cn);
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@nombre_empleado", obje.Nombre_empleado);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            return dt;
+
+        }
+    }
+
 }
 
 
