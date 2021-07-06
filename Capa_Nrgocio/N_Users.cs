@@ -25,7 +25,7 @@ namespace Capa_Nrgocio
     }
     public class ClassNegocio
     {
-        ClassDatos objd = new  ClassDatos();
+        ClassDatos objd = new ClassDatos();
 
 
 
@@ -50,5 +50,32 @@ namespace Capa_Nrgocio
 
             return objd.D_mantenimiento_clientes(obje);
         }
+    }
+    public class ClassCargo
+    {
+        D_Cargo objd = new D_Cargo();
+
+
+
+        public DataTable N_listar_cargo()
+        {
+
+            return objd.D_Listar_Cargo();
+
+        }
+        public DataTable N_buscar_cargo(E_cargo obje)
+
+        {
+
+            return objd.D_buscar_Cargo(obje);
+
+        }
+        public string N_mantenimiento_cargos(E_cargo obje)
+
+        {
+
+            return objd.D_mantenimiento_cargo(obje);
+        }
+
     }
 }

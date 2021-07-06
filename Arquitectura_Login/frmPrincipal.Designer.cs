@@ -31,17 +31,10 @@ namespace Arquitectura_Login
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblnombre = new System.Windows.Forms.Label();
-            this.lblfecha = new System.Windows.Forms.Label();
-            this.lblcargo = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.buttonmini = new System.Windows.Forms.PictureBox();
             this.buttoncerrar = new System.Windows.Forms.PictureBox();
-            this.lbbienvenido = new System.Windows.Forms.Label();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -69,72 +62,6 @@ namespace Arquitectura_Login
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(17, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Usuario:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(386, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Fecha:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DimGray;
-            this.label4.Location = new System.Drawing.Point(160, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 18);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Cargo:";
-            // 
-            // lblnombre
-            // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombre.ForeColor = System.Drawing.Color.White;
-            this.lblnombre.Location = new System.Drawing.Point(79, 9);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(61, 17);
-            this.lblnombre.TabIndex = 4;
-            this.lblnombre.Text = "Nombre";
-            // 
-            // lblfecha
-            // 
-            this.lblfecha.AutoSize = true;
-            this.lblfecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfecha.ForeColor = System.Drawing.Color.White;
-            this.lblfecha.Location = new System.Drawing.Point(450, 6);
-            this.lblfecha.Name = "lblfecha";
-            this.lblfecha.Size = new System.Drawing.Size(28, 17);
-            this.lblfecha.TabIndex = 5;
-            this.lblfecha.Text = ".....";
-            // 
-            // lblcargo
-            // 
-            this.lblcargo.AutoSize = true;
-            this.lblcargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcargo.ForeColor = System.Drawing.Color.White;
-            this.lblcargo.Location = new System.Drawing.Point(225, 8);
-            this.lblcargo.Name = "lblcargo";
-            this.lblcargo.Size = new System.Drawing.Size(28, 17);
-            this.lblcargo.TabIndex = 7;
-            this.lblcargo.Text = ".....";
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -144,13 +71,6 @@ namespace Arquitectura_Login
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.panelContenedor.Controls.Add(this.buttonmini);
             this.panelContenedor.Controls.Add(this.buttoncerrar);
-            this.panelContenedor.Controls.Add(this.lbbienvenido);
-            this.panelContenedor.Controls.Add(this.lblcargo);
-            this.panelContenedor.Controls.Add(this.lblfecha);
-            this.panelContenedor.Controls.Add(this.label2);
-            this.panelContenedor.Controls.Add(this.label4);
-            this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.lblnombre);
             this.panelContenedor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.panelContenedor.Location = new System.Drawing.Point(236, 0);
             this.panelContenedor.Name = "panelContenedor";
@@ -178,18 +98,6 @@ namespace Arquitectura_Login
             this.buttoncerrar.TabIndex = 20;
             this.buttoncerrar.TabStop = false;
             this.buttoncerrar.Click += new System.EventHandler(this.buttoncerrar_Click);
-            // 
-            // lbbienvenido
-            // 
-            this.lbbienvenido.AutoSize = true;
-            this.lbbienvenido.BackColor = System.Drawing.Color.Transparent;
-            this.lbbienvenido.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbbienvenido.ForeColor = System.Drawing.Color.DimGray;
-            this.lbbienvenido.Location = new System.Drawing.Point(0, 40);
-            this.lbbienvenido.Name = "lbbienvenido";
-            this.lbbienvenido.Size = new System.Drawing.Size(510, 41);
-            this.lbbienvenido.TabIndex = 2;
-            this.lbbienvenido.Text = "Bienvenido al menu principal";
             // 
             // panelMenu
             // 
@@ -284,6 +192,7 @@ namespace Arquitectura_Login
             this.btncargo.TabIndex = 13;
             this.btncargo.Text = "Cargo";
             this.btncargo.UseVisualStyleBackColor = false;
+            this.btncargo.Click += new System.EventHandler(this.btncargo_Click);
             // 
             // pictureBox3
             // 
@@ -383,7 +292,6 @@ namespace Arquitectura_Login
             this.Text = "frmPrincipal";
             this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.panelContenedor.ResumeLayout(false);
-            this.panelContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonmini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttoncerrar)).EndInit();
             this.panelMenu.ResumeLayout(false);
@@ -399,16 +307,8 @@ namespace Arquitectura_Login
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblnombre;
-        private System.Windows.Forms.Label lblfecha;
-        private System.Windows.Forms.Label lblcargo;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.Label lbbienvenido;
         private System.Windows.Forms.Panel panelMenu;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btncargo;

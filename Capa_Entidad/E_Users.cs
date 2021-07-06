@@ -42,5 +42,15 @@ namespace Capa_Entidad
         public String accion { get; set; }
 
     }
+    public class E_cargo
+    {
+        public string Id_cargo { get; set; }
+
+        public string Nombre_Cargo { get; set; }
+
+        public string Salario { get; set; }
+
+        public String accion { get; set; }
+    }
 
 }
